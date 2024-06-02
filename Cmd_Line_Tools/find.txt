@@ -1,0 +1,18 @@
+
+* FIND COMMAND
+
+$ find .  "or" <file path>   <- use . or <file path> to search folder/directories
+$ find . -name "filename.txt"   <- used when you know the file name
+$ find . -name "*.txt"    <- when you dont know the file name
+$ find . -name "*.txt" | wc -l    <- used to find the total # of that file type
+$ find . -name "*.txt" -exec grep -l "text to find" {} +  <- * (dont know name) grep used to find text within a file (-l) prints just the file path  if the file contains "text" {} to hold the results and + to run once and stop
+$ find . -iname "FileNaME.TxT"  <- -iname not case sensitive
+$ find . -type f -exec grep -l "some text" {} +  <- used with f for file(no extention needed) or d for directory
+$ find /var/directory -user bob  <- used to find the user objects or diag ownership issues
+$ find /var/directory -perm 744 - to view permissions
+$ find . -size +1G  <- obvious to find file sizes
+
+-> + append found files to a list, then runs the command once and \; executes the command once for each file found. Slower but necessary for some cmds
+
+
+

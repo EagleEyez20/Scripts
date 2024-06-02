@@ -41,3 +41,4 @@ def clean_downloads_folder(downloads_path):
 if __name__ == "__main__":
     downloads_folder_path = "/home/eagleeyez/Downloads"  # Change this to your Downloads folder path
     clean_downloads_folder(downloads_folder_path)
+

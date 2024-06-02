@@ -2,7 +2,7 @@ print("Welcome to my computer quiz!")
 
 playing = input("Are you ready to play? yes/no? ")
 
-#adding text for git response
+#text for git response
 if playing != "yes":
     quit()
     

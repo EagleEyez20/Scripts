@@ -1,7 +1,7 @@
 # This function updates the Ollama client by fetching a list of Ollama models and updating each one.
-function update_ollama_models:
-    echo "Updating Ollama client..."
-    curl  -fsSL https://ollama.com/install.sh | sh 
+function update_ollama_models: any
+        echo "Updating Ollama client..."
+        curl  -fsSL https://ollama.com/install.sh | sh 
     
     if not type -q ollama
         echo "Ollama command could not be found. Please check the installation."

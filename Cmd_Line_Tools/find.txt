@@ -1,4 +1,3 @@
-
 * FIND COMMAND
 
 $ find .  "or" <file path>   <- use . or <file path> to search folder/directories
